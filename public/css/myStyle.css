@@ -1,0 +1,49 @@
+#cabeza{
+	font: bold 40px verdana, sans-serif;
+	text-align: center;
+}
+
+#parafo{
+	text-align: justify;
+}
+
+#fechaCreate{
+	padding-left: 150px;
+}
+
+#groupSF{
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#msj{
+	font: bold 25px verdana, sans-serif;
+	text-align: center;
+}
+
+#box{
+	padding-left: 30px;
+}
+
+#bloque {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+#caja1, #caja2 {
+	width: 45%;
+	margin-left: 105px;
+	float: left;
+	padding-bottom: 20px;
+}
+#caja1 {
+	background-color: #ffffff;
+	margin-left: 2px!important;
+	margin-left: 1px;
+}
+#caja2 {
+	background-color: #ffffff;
+}
+.salto {
+	clear: both;
+}
