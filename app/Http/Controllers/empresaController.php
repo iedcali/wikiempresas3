@@ -26,7 +26,7 @@ class empresaController extends Controller
     }
 
     public function mostrar_sucursales($id){
-
+        //algo esta pasando
     }
 
     public function index(Request $request)
