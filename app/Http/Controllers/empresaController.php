@@ -26,7 +26,13 @@ class empresaController extends Controller
     }
 
     public function mostrar_sucursales($id){
-        //algo esta pasando
+        $empresa = Empresa::findOrFail($id);
+        $categoria = $empresa->categoria()->get()[0];
+        $sucursales = $empresa->sucursales()
+            ->orderBy('id', 'desc')
+            ->paginate(5);
+        return view('empresa.mostrarSucursales', ["empresa" => $empresa,
+            "categoria" => $categoria, "sucursales" => $sucursales]);
     }
 
     public function index(Request $request)

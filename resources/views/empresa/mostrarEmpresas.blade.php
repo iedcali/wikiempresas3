@@ -15,7 +15,7 @@
                                         <td>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <a href="{{ url('/empresa/' . $item->id) }}" title=""><h4>
+                                                    <a href="{{ route('empresa.mostrar_sucursales',[$item->id])}}" title=""><h4>
                                                             {{ $item->nombre}}
                                                         </h4></a>
                                                     {{ $item->id }}
