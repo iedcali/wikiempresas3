@@ -23,6 +23,9 @@ class Empresa extends Model
 
     public function categoria(){
         //*algo de ejemplo
+        /*
+        esto es un ejemplo de pull 
+        */
         return $this->hasOne('App\Categoria','id');
     }
 }
