@@ -12,4 +12,8 @@ class Categoria extends Model
     protected $fillable = [
         'descripcion'
     ];
+
+    public function empresas(){
+        $empresas=$this->belongsTo('App\Empresa','idcategoria');
+    }
 }

@@ -70,14 +70,11 @@ class empresaController extends Controller
 
     public function show($id)
     {
-
         $empresa = Empresa::findOrFail($id);
-        //$categoria = Categoria::findOrFail($empresa->idcategoria);
-        return $empresa->categoria()->get();
+        $categoria = $empresa->categoria()->get()[0];
         $sucursales = $empresa->sucursales()
             ->orderBy('id', 'desc')
             ->paginate(5);
-        //return $empresa->sucursales()->get();
         return view('empresa.show', ["empresa" => $empresa,
             "categoria" => $categoria, "sucursales" => $sucursales]);
     }
