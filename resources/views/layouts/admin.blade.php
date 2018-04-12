@@ -16,6 +16,7 @@
     {!!Html::style('css/font-awesome.min.css')!!}
     {!!Html::style('css/bootstrap-responsive.css')!!}
     {!!Html::style('css/bootstrap-timepicker.min.css')!!}
+    @yield('style')
 </head>
 
 <body>

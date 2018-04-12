@@ -81,6 +81,8 @@ class empresaController extends Controller
         $sucursales = $empresa->sucursales()
             ->orderBy('id', 'desc')
             ->paginate(5);
+        $categoria=Categoria::findOrFail(4);
+        //return $categoria->empresa();
         return view('empresa.show', ["empresa" => $empresa,
             "categoria" => $categoria, "sucursales" => $sucursales]);
     }

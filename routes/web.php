@@ -2,7 +2,9 @@
 
 //Route::get('pdfview','pdfController@pdfview')->name('pdfview');
 
+
 Route::get('/', function () {
+    //return view('mapa.mapa');
     return view('inicio.inicio');
 });
 

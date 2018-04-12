@@ -15,4 +15,8 @@ class Sucursal extends Model
         'telefono',
         'idempresa'
     ];
+
+    public function empresa(){
+        $empresa=$this->belongsTo("App\Empresa",'idempresa');
+    }
 }
